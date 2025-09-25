@@ -103,7 +103,7 @@ jobs:
 
     - name: Test Docker image
       run: |
-        docker compose run app 
+        docker compose up -d
         sleep 30
         curl -f http://localhost:8080/api/health || exit 1
         docker stop test-app
