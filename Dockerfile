@@ -39,4 +39,4 @@ USER spring
 EXPOSE 8080
 
 # Run application
-ENTRYPOINT ["java","-cp","app:app/lib/*","com.example.devopstraining.DevopsTrainingApplication"]
+ENTRYPOINT ["java","-cp","/app:/app/lib/*","com.example.devopstraining.DevopsTrainingApplication"]
